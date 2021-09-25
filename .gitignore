@@ -10,3 +10,4 @@ build
 out
 test-out
 test.csv
+.gradle
