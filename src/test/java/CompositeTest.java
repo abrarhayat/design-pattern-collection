@@ -1,9 +1,10 @@
 import compositeDesignPattern.Playlist;
 import compositeDesignPattern.Song;
+import org.testng.annotations.Test;
 
 public class CompositeTest {
-    public static void main(String args[]) {
-
+    @Test
+    public void testCompositeDesign() {
         // Make new empty "Study" playlist
         Playlist studyPlaylist = new Playlist("Study");
 
