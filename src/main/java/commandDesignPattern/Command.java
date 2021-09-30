@@ -13,7 +13,7 @@ public abstract class Command {
 
     protected abstract void execute();
 
-    protected abstract void unexecute();
+    protected abstract void revert();
 
     protected abstract boolean isReversible();
 }

@@ -11,7 +11,7 @@ public class WriteCommand extends Command {
     }
 
     @Override
-    protected void unexecute() {
+    protected void revert() {
         System.out.println("Deleting From DB");
     }
 

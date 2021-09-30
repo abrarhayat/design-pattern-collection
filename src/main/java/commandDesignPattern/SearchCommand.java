@@ -11,7 +11,7 @@ public class SearchCommand extends Command {
     }
 
     @Override
-    protected void unexecute() {
+    protected void revert() {
     }
 
     @Override

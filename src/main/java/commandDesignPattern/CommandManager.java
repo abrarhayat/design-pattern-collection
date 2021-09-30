@@ -18,7 +18,7 @@ public class CommandManager {
     public void reverseCommand(Command command) {
         System.out.println("Reversing " + command.commandName);
         if (command.isReversible()) {
-            command.unexecute();
+            command.revert();
             return;
         }
         System.out.println("Command is irreversible");
