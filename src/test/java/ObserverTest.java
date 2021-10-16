@@ -14,6 +14,7 @@ public class ObserverTest {
         Bidder shortTermBidder = new Bidder();
         auction.registerObserver(shortTermBidder);
 
+        System.out.println(auction.getState());
         auction.setState("No new bids!");
 
         auction.notifyObservers();
@@ -25,6 +26,8 @@ public class ObserverTest {
         auction.notifyObservers();
 
         Channel channel = new Channel("Abrar's Channel", "Active");
+        System.out.println(channel.getChannelName());
+        channel.setChannelName("Abrar's Channel!");
 
         channel.registerObserver(new Follower("Test1"));
         channel.registerObserver(new Follower("Test2"));
@@ -35,6 +38,7 @@ public class ObserverTest {
         channel.notifyObservers();
 
         channel.setStatus("No New Videos!");
+        System.out.println(channel.getStatus());
 
         channel.unregisterObserver(tempFollower);
 
